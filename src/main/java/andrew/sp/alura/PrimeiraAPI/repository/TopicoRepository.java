@@ -13,7 +13,7 @@ public interface TopicoRepository extends JpaRepository<Topico, Long>{
 	//Padrão de nomenclatura do SpringBoot
 	List<Topico> findByCursoNome(String nomeCurso);
 	
-	//Select feito na mão
+	//Select feito na mão, orientado a objeto
 	@Query("SELECT t FROM Topico t WHERE t.curso.nome = :nomeCurso")
     List<Topico> carregarPorNomeDoCurso(@Param("nomeCurso") String nomeCurso);
 	
