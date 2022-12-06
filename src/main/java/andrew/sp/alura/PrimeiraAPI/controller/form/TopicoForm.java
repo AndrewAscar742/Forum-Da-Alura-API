@@ -1,4 +1,4 @@
-package andrew.sp.alura.PrimeiraAPI.controller.dto;
+package andrew.sp.alura.PrimeiraAPI.controller.form;
 
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
